@@ -24,3 +24,4 @@ Agregar librerías de Front-end
 ---------------------------------
 Usar la sintaxis `$ bower install --save-dev [librería]`. Luego inyectar la dependencia en la aplicación con `$ gulp wiredep`.
 
+# angular
