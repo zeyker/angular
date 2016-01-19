@@ -1,0 +1,15 @@
+<div ng-app="angularSpa"> 
+ <div style="position:absolute; top:50px;">
+ <div style="position:absolute; top:150px;">
+<h1>Eliminar Publicación</h1>
+<div ng-controller="deletePubliCtrl">
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click=  "deletePublicacion()" class="btn btn-small btn-danger">Eliminar</a> 
+                <div ng-controller="deletePubliCtrl">{{status}}</div>
+            </div>
+        </div>
+    </form>
+ </div>
+</div>

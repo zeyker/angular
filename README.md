@@ -17,6 +17,7 @@ Una vez clonada la carpeta:
 * Descargar dependencias de Node: `$ npm install`
 * Descargar dependencias de Bower: `$ gulp bower`
 * Enlazar dependencias Bower a index.html: `$ gulp wiredep`
+* Agregar nuevos archivos JS a archivo index.html: `$ gulp inject`
 * Iniciar servidor de desarrollo: `$ gulp serve`
 * Generar versión de producción: `$ gulp build`
 
@@ -24,4 +25,3 @@ Agregar librerías de Front-end
 ---------------------------------
 Usar la sintaxis `$ bower install --save-dev [librería]`. Luego inyectar la dependencia en la aplicación con `$ gulp wiredep`.
 
-# angular

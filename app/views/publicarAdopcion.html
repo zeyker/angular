@@ -1,0 +1,54 @@
+<div ng-app="angularSpa"> 
+
+ <div style="position:absolute; top:50px;">
+
+ <div style="position:absolute; top:150px;">
+<h1>Poner en Adopción</h1>
+<div ng-controller="PubAdopcionCtrl as up">
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputTitulo">Titulo :</label>
+            <div class="controls">
+                <input type="text"ng-model="newTitulo"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDescripcion">Descripcion:</label>
+            <div class="controls">
+                <input type="text"  ng-model="newDescripcion"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputEmail">Email de Contacto:</label>
+            <div class="controls">
+                <input type="text"ng-model="newEmail"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputFono">Telefono de Contacto:</label>
+            <div class="controls">
+                <input type="text"ng-model="newFono"/>
+            </div>
+        </div>
+        </br></br>
+         <div>
+            <a class="btn btn-primary" href="#/maino">Añadir Imágenes<i class="fa fa-angle-right"></i></a>
+        </div>
+        </br></br>
+        <div class="control-group">
+            <div class="controls">
+              <!-- user-detail.html: -->
+              
+
+              <!-- user-creation.html: -->
+                <a ng-click=  "addPostAdopcion()" class="btn btn-small btn-primary">Publicar</a>
+                </br></br>
+                <div ng-controller="PubAdopcionCtrl">{{status}}</div>
+            </div>
+        </div>
+    </form>
+ </div>
+</div>
+
+
+

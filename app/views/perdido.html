@@ -1,0 +1,100 @@
+<div ng-controller = "PerdidoCtrl"> 
+</br>
+</br>
+</br>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">Post de Mascota Perdida
+            </h1>
+        </div>
+
+    </div>
+    <!--div ng-repeat="x in data"-->
+    <div class="row">
+
+        <div class="col-lg-8">
+
+            <!-- the actual blog post: title/author/date/content -->
+            <hr>
+            <p><i class="fa fa-clock-o"></i> 2016-01-18 14:57 <a href="#">Se perdió mi perrito Pelusa!</a>
+            </p>
+            <hr>
+            <img src="http://placehold.it/900x300" class="img-responsive">
+            <hr>
+            <p class="lead"> En las cercanías de la USACH</p>
+
+            <hr>
+
+             <div>
+                <a class="btn btn-primary" href="#/editar_publicacion">Editar la Publicación<i class="fa fa-angle-right"></i></a>
+            </div>
+            </br>
+            <div>
+                <a class="btn btn-primary" href="#/delete_publicacion">Eliminar la Publicación<i class="fa fa-angle-right"></i></a>
+            </div>
+
+            <hr>
+            <!-- the comment box -->
+            <div class="well">
+                <h4>Deje un comentario:</h4>
+
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+    <!--/div-->
+    <!--div ng-repeat="x in data"-->
+    <div class="row">
+
+        <div class="col-lg-8">
+
+            <!-- the actual blog post: title/author/date/content -->
+            <hr>
+            <p><i class="fa fa-clock-o"></i> {{dataPerdido.fechaPublicacion}} <a href="#">{{dataPerdido.idPublicacion+ ', ' +dataPerdido.titulo}}</a>
+            </p>
+            <hr>
+            <img src="http://placehold.it/900x300" class="img-responsive">
+            <hr>
+            <p class="lead"> {{dataPerdido.descripcion}}</p>
+
+            <hr>
+
+             <div>
+                <a class="btn btn-primary" href="#/editar_publicacion">Editar la Publicación<i class="fa fa-angle-right"></i></a>
+            </div>
+            </br>
+            <div>
+                <a class="btn btn-primary" href="#/delete_publicacion">Eliminar la Publicación<i class="fa fa-angle-right"></i></a>
+            </div>
+
+            <hr>
+            <!-- the comment box -->
+            <div class="well">
+                <h4>Leave a Comment:</h4>
+
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+    <!--/div-->
+
+</div>
+</div>
+<!-- /.container -->

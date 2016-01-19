@@ -1,0 +1,79 @@
+<div  ng-controller = "ViewPerdidosCtrl"> 
+</br>
+</br>
+</br>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <h1 class="page-header">Mascotas Perdidas
+            </h1>
+        </div>
+
+    </div>
+    <div>
+        <a class="btn btn-primary" href="#/publicar_perdido">Publicar de una Mascota Perdida<i class="fa fa-angle-right"></i></a>
+    </div>
+
+    <hr>
+     <div class="row">
+
+        <div class="col-md-1">
+            <p><i class="fa fa-camera fa-4x"></i>
+            </p>
+
+            <p>2016-01-18 09:40</p>
+        </div>
+        <div class="col-md-5">
+            <a href="blog-post.html">
+                <img src="http://placehold.it/600x300" class="img-responsive">
+            </a>
+        </div>
+        <div class="col-md-6">
+            <h3><a href="blog-post.html">'Se perdió mi perrito Pelusa!'</a>
+            </h3>
+
+            <p>by <a href="#">user1</a>
+            </p>
+
+            <p>'En las cercanias de la USACH'</p>
+            <a class="btn btn-primary" href="#/perdido/{{x.idPublicacion}}">Ver más <i class="fa fa-angle-right"></i></a>
+        </div>
+
+    </div>
+    
+    <hr>
+
+    <div ng-repeat="x in data">
+    <div class="row">
+
+        <div class="col-md-1">
+            <p><i class="fa fa-camera fa-4x"></i>
+            </p>
+
+            <p>{{x.fechaPublicacion}}</p>
+        </div>
+        <div class="col-md-5">
+            <a href="blog-post.html">
+                <img src="http://placehold.it/600x300" class="img-responsive">
+            </a>
+        </div>
+        <div class="col-md-6">
+            <h3><a href="blog-post.html">{{x.idPublicacion+ ', ' +x.titulo}}</a>
+            </h3>
+
+            <p>by <a href="#">{{x.usuario}}</a>
+            </p>
+
+            <p>{{x.descripcion}}</p>
+            <a class="btn btn-primary" href="#/perdido/{{x.idPublicacion}}">Ver más <i class="fa fa-angle-right"></i></a>
+        </div>
+
+    </div>
+    <hr>
+    </div>
+
+</div>
+</div>
+<!-- /.container -->

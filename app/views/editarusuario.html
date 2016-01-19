@@ -1,0 +1,58 @@
+<div ng-app="angularSpa"> 
+
+ <div style="position:absolute; top:50px;">
+
+
+  
+
+
+ <div style="position:absolute; top:150px;">
+<h1>Editar</h1>
+<div ng-controller="editarCtrl">
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputNombre">Nombre:</label>
+            <div class="controls">
+                <input type="text" ng-model="newNombre"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputCorreo">Correo :</label>
+            <div class="controls">
+                <input type="email"ng-model="newCorreo"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputId">ID :</label>
+            <div class="controls">
+                <input type="text"  ng-model="newId"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputContrasena">Contraseña:</label>
+            <div class="controls">
+                <input type="password"  ng-model="newContrasena"/>
+            </div>
+        </div>
+        
+
+
+
+
+        <div class="control-group">
+            <div class="controls">
+              <!-- user-detail.html: -->
+              
+
+              <!-- user-creation.html: -->
+                <a ng-click=  "edit()" class="btn btn-small btn-primary">Editar</a>
+              
+                <div ng-controller="editarCtrl">{{status}}</div>
+            </div>
+        </div>
+    </form>
+ </div>
+</div>
+
+
+
